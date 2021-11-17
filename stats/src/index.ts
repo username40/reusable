@@ -2,17 +2,15 @@
 // npm i @types/node
 // import fs from 'fs';
 import { CsvFileReader } from "./CsvFileReader";
+import { MatchResult } from "./MatchResult";
 
 
 const reader = new CsvFileReader('football.csv')
 reader.read()
 
-// enum
-enum MatchResult {
-	HomeWin = 'H',
-	AwayWin = 'A',
-	Draw = 'D'
-}
+console.log(reader.data[0][0])
+
+
 
 let manUnitedWins = 0
 
