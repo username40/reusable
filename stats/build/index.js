@@ -3,9 +3,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // for correct work install type definition files
 // npm i @types/node
 // import fs from 'fs';
-var CsvFileReader_1 = require("./CsvFileReader");
+var MatchReader_1 = require("./MatchReader");
 var MatchResult_1 = require("./MatchResult");
-var reader = new CsvFileReader_1.CsvFileReader('football.csv');
+var reader = new MatchReader_1.MatchReader('football.csv');
 reader.read();
 console.log(reader.data[0][0]);
 var manUnitedWins = 0;
